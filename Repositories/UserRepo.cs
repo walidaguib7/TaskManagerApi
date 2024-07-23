@@ -19,9 +19,9 @@ namespace TasksApi.Repositories
             this.manager = manager;
         }
 
-        public async Task<User> CreateAccount(User _user)
+        public async Task<User> CreateAccount(User _user , string Password)
         {
-             await userManager.CreateAsync(_user);
+             await userManager.CreateAsync(_user,Password);
             return _user;
             
         }
