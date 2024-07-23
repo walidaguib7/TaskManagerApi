@@ -14,5 +14,6 @@ namespace TasksApi.Data
 
 
         public DbSet<FilesModel> files { get; set; }
+        public DbSet<Category> categories { get; set; }
     }
 }

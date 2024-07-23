@@ -13,6 +13,7 @@ namespace TasksApi.Extensions
             services.AddTransient<IFiles, FilesRepo>();
             services.AddTransient<IToken, TokenRepo>();
             services.AddScoped<IUser, UserRepo>();
+            services.AddTransient<ICategory, CategoryRepo>();
         }
 
         public static void ConfigIdentity(this IServiceCollection services) 

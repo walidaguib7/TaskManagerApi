@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\AW7\\TasksApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\dtos\\category\\updatecategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:dtos\\category\\updatecategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\repositories\\categoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:repositories\\categoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\services\\icategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:services\\icategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\extensions\\configservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:extensions\\configservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\repositories\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:repositories\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\services\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:services\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,40 +35,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ConfigServices.cs",
-              "DocumentMoniker": "D:\\AW7\\TasksApi\\Extensions\\ConfigServices.cs",
-              "RelativeDocumentMoniker": "Extensions\\ConfigServices.cs",
-              "ToolTip": "D:\\AW7\\TasksApi\\Extensions\\ConfigServices.cs",
-              "RelativeToolTip": "Extensions\\ConfigServices.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAIAxwBgAAAA8AAAA",
+              "Title": "UpdateCategoryDto.cs",
+              "DocumentMoniker": "D:\\AW7\\TasksApi\\Dtos\\Category\\UpdateCategoryDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\Category\\UpdateCategoryDto.cs",
+              "ToolTip": "D:\\AW7\\TasksApi\\Dtos\\Category\\UpdateCategoryDto.cs",
+              "RelativeToolTip": "Dtos\\Category\\UpdateCategoryDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T02:43:36.774Z",
+              "WhenOpened": "2024-07-23T04:25:53.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\AW7\\TasksApi\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "D:\\AW7\\TasksApi\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAywB0AAAAwAAAA",
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\AW7\\TasksApi\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\AW7\\TasksApi\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T02:37:52.839Z",
+              "WhenOpened": "2024-07-23T03:57:03.128Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IUser.cs",
-              "DocumentMoniker": "D:\\AW7\\TasksApi\\Services\\IUser.cs",
-              "RelativeDocumentMoniker": "Services\\IUser.cs",
-              "ToolTip": "D:\\AW7\\TasksApi\\Services\\IUser.cs",
-              "RelativeToolTip": "Services\\IUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABDAAAA",
+              "Title": "ICategory.cs",
+              "DocumentMoniker": "D:\\AW7\\TasksApi\\Services\\ICategory.cs",
+              "RelativeDocumentMoniker": "Services\\ICategory.cs",
+              "ToolTip": "D:\\AW7\\TasksApi\\Services\\ICategory.cs",
+              "RelativeToolTip": "Services\\ICategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T02:31:15.963Z",
+              "WhenOpened": "2024-07-23T03:52:22.09Z",
               "EditorCaption": ""
             },
             {
@@ -73,15 +77,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserRepo.cs",
-              "DocumentMoniker": "D:\\AW7\\TasksApi\\Repositories\\UserRepo.cs",
-              "RelativeDocumentMoniker": "Repositories\\UserRepo.cs",
-              "ToolTip": "D:\\AW7\\TasksApi\\Repositories\\UserRepo.cs",
-              "RelativeToolTip": "Repositories\\UserRepo.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAA1AAAA",
+              "DocumentIndex": 4,
+              "Title": "ConfigServices.cs",
+              "DocumentMoniker": "D:\\AW7\\TasksApi\\Extensions\\ConfigServices.cs",
+              "RelativeDocumentMoniker": "Extensions\\ConfigServices.cs",
+              "ToolTip": "D:\\AW7\\TasksApi\\Extensions\\ConfigServices.cs",
+              "RelativeToolTip": "Extensions\\ConfigServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T22:49:37.027Z",
+              "WhenOpened": "2024-07-23T03:48:22.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoryRepo.cs",
+              "DocumentMoniker": "D:\\AW7\\TasksApi\\Repositories\\CategoryRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\CategoryRepo.cs",
+              "ToolTip": "D:\\AW7\\TasksApi\\Repositories\\CategoryRepo.cs",
+              "RelativeToolTip": "Repositories\\CategoryRepo.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAqwBIAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:48:04.843Z",
               "EditorCaption": ""
             }
           ]
