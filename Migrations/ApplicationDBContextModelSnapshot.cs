@@ -175,6 +175,53 @@ namespace TasksApi.Migrations
                     b.ToTable("files");
                 });
 
+            modelBuilder.Entity("TasksApi.Models.Tasks", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime?>("CompletedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("categoryId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("priority")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("status")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("userId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("categoryId");
+
+                    b.HasIndex("userId");
+
+                    b.ToTable("tasks");
+                });
+
             modelBuilder.Entity("TasksApi.Models.User", b =>
                 {
                     b.Property<string>("Id")
@@ -310,6 +357,25 @@ namespace TasksApi.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("TasksApi.Models.Tasks", b =>
+                {
+                    b.HasOne("TasksApi.Models.Category", "category")
+                        .WithMany()
+                        .HasForeignKey("categoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TasksApi.Models.User", "user")
+                        .WithMany("tasks")
+                        .HasForeignKey("userId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("category");
+
+                    b.Navigation("user");
+                });
+
             modelBuilder.Entity("TasksApi.Models.User", b =>
                 {
                     b.HasOne("TasksApi.Models.FilesModel", "file")
@@ -319,6 +385,11 @@ namespace TasksApi.Migrations
                         .IsRequired();
 
                     b.Navigation("file");
+                });
+
+            modelBuilder.Entity("TasksApi.Models.User", b =>
+                {
+                    b.Navigation("tasks");
                 });
 #pragma warning restore 612, 618
         }

@@ -14,6 +14,7 @@ namespace TasksApi.Extensions
             services.AddTransient<IToken, TokenRepo>();
             services.AddScoped<IUser, UserRepo>();
             services.AddTransient<ICategory, CategoryRepo>();
+            services.AddTransient<ITasks, TasksRepo>();
         }
 
         public static void ConfigIdentity(this IServiceCollection services) 

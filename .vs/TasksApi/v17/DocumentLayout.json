@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "D:\\AW7\\TasksApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\dtos\\category\\updatecategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:dtos\\category\\updatecategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\repositories\\categoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:repositories\\categoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\services\\icategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:services\\icategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\extensions\\configservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:extensions\\configservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\repositories\\tasksrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:repositories\\tasksrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,71 +19,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UpdateCategoryDto.cs",
-              "DocumentMoniker": "D:\\AW7\\TasksApi\\Dtos\\Category\\UpdateCategoryDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\Category\\UpdateCategoryDto.cs",
-              "ToolTip": "D:\\AW7\\TasksApi\\Dtos\\Category\\UpdateCategoryDto.cs",
-              "RelativeToolTip": "Dtos\\Category\\UpdateCategoryDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Title": "TasksRepo.cs",
+              "DocumentMoniker": "D:\\AW7\\TasksApi\\Repositories\\TasksRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\TasksRepo.cs",
+              "ToolTip": "D:\\AW7\\TasksApi\\Repositories\\TasksRepo.cs",
+              "RelativeToolTip": "Repositories\\TasksRepo.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAUwCgAAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T04:25:53.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "D:\\AW7\\TasksApi\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
-              "ToolTip": "D:\\AW7\\TasksApi\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "Controllers\\CategoryController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T03:57:03.128Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ICategory.cs",
-              "DocumentMoniker": "D:\\AW7\\TasksApi\\Services\\ICategory.cs",
-              "RelativeDocumentMoniker": "Services\\ICategory.cs",
-              "ToolTip": "D:\\AW7\\TasksApi\\Services\\ICategory.cs",
-              "RelativeToolTip": "Services\\ICategory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T03:52:22.09Z",
+              "WhenOpened": "2024-07-23T23:13:44.72Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ConfigServices.cs",
-              "DocumentMoniker": "D:\\AW7\\TasksApi\\Extensions\\ConfigServices.cs",
-              "RelativeDocumentMoniker": "Extensions\\ConfigServices.cs",
-              "ToolTip": "D:\\AW7\\TasksApi\\Extensions\\ConfigServices.cs",
-              "RelativeToolTip": "Extensions\\ConfigServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T03:48:22.6Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CategoryRepo.cs",
-              "DocumentMoniker": "D:\\AW7\\TasksApi\\Repositories\\CategoryRepo.cs",
-              "RelativeDocumentMoniker": "Repositories\\CategoryRepo.cs",
-              "ToolTip": "D:\\AW7\\TasksApi\\Repositories\\CategoryRepo.cs",
-              "RelativeToolTip": "Repositories\\CategoryRepo.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAqwBIAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T03:48:04.843Z",
-              "EditorCaption": ""
             }
           ]
         }

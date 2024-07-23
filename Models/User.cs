@@ -12,5 +12,6 @@ namespace TasksApi.Models
 
         public int fileId { get; set; }
         public FilesModel file { get; set; }
+        public ICollection<Tasks> tasks { get; set; } = [];
     }
 }
