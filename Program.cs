@@ -4,12 +4,15 @@ using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
 using TasksApi.Data;
 using TasksApi.Extensions;
+using TasksApi.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(
+//options.Filters.Add(new MyLogging())
+);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -31,8 +34,11 @@ builder.Services.AddDbContext<ApplicationDBContext>( options =>
 );
 
 
+
+
 builder.Services.AddCustomServices();
 builder.Services.ConfigIdentity();
+builder.Services.AddSockets();
 
 builder.Services.AddAuthentication(options =>
 {
@@ -93,6 +99,8 @@ app.UseDirectoryBrowser(new DirectoryBrowserOptions
 });
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

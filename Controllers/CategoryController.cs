@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using TasksApi.Dtos.Category;
 using TasksApi.Mappers;
 using TasksApi.Services;
+using TasksApi.Filters;
 
 namespace TasksApi.Controllers
 {
@@ -13,6 +14,7 @@ namespace TasksApi.Controllers
         private readonly ICategory categoryService = _categoryService;
 
         [HttpGet]
+        [MyLogging("All categories")]
         public async Task<IActionResult> GetCategories()
         {
             var categories = await categoryService.GetAllCategories();

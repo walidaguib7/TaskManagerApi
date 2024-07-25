@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FluentValidation;
+using Microsoft.EntityFrameworkCore;
 using TasksApi.Data;
 using TasksApi.Dtos.Tasks;
 using TasksApi.Helpers;
@@ -7,14 +8,24 @@ using TasksApi.Services;
 
 namespace TasksApi.Repositories
 {
-    public class TasksRepo(ApplicationDBContext _context) : ITasks
+    public class TasksRepo(
+        ApplicationDBContext _context ,
+        [FromKeyedServices("tasks")] IValidator<Tasks> _validator) : ITasks
     {
         private readonly ApplicationDBContext context = _context;
-        public async Task<Tasks> CreateTask(Tasks task)
+        private readonly IValidator<Tasks> validator = _validator;
+        public async Task<Tasks?> CreateTask(Tasks task)
         {
-            await context.tasks.AddAsync(task);
-            await context.SaveChangesAsync();
-            return task;
+            var result = validator.Validate(task);
+            if (result.IsValid) {
+                await context.tasks.AddAsync(task);
+                await context.SaveChangesAsync();
+                return task;
+            }else
+            {
+                return null;
+            }
+            
         }
 
         public async Task<Tasks?> DeleteTask(int id)
@@ -58,16 +69,23 @@ namespace TasksApi.Repositories
         public async Task<Tasks?> UpdateTask(int id, UpdateTaskDto dto)
         {
             var task = await context.tasks.FindAsync(id);
-            if (task == null) return null;
-            task.Name = dto.Name;
-            task.Description = dto.Description;
-            task.status = dto.status;
-            task.priority = dto.priority;
-            task.UpdatedAt = DateTime.Today;
-            task.CompletedAt = dto.CompletedAt;
-            task.categoryId = dto.categoryId;
-            await context.SaveChangesAsync();
-            return task;
+            var result = validator.Validate(task);
+            if (result.IsValid)
+            {
+                task.Name = dto.Name;
+                task.Description = dto.Description;
+                task.status = dto.status;
+                task.priority = dto.priority;
+                task.UpdatedAt = DateTime.Today;
+                task.CompletedAt = dto.CompletedAt;
+                task.categoryId = dto.categoryId;
+                await context.SaveChangesAsync();
+                return task;
+            }else
+            {
+             return null;
+            }
+            
         }
     }
 }

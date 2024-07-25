@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using FluentValidation;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using TasksApi.Dtos.User;
 using TasksApi.Models;
@@ -11,18 +12,34 @@ namespace TasksApi.Repositories
         private readonly UserManager<User> userManager ;
         private readonly IToken _tokenService ;
         private readonly SignInManager<User> manager;
+        private readonly IValidator<User> validator  ;
 
-        public UserRepo(UserManager<User> userManager, IToken tokenService, SignInManager<User> manager)
+        public UserRepo(
+            UserManager<User> userManager,
+            IToken tokenService,
+            SignInManager<User> manager,
+            [FromKeyedServices("user")] IValidator<User> _validator
+            )
         {
             this.userManager = userManager;
             _tokenService = tokenService;
             this.manager = manager;
-        }
+            validator = _validator;
+            
+    }
 
-        public async Task<User> CreateAccount(User _user , string Password)
+        public async Task<User?> CreateAccount(User _user , string Password)
         {
-             await userManager.CreateAsync(_user,Password);
-            return _user;
+            var result =  validator.Validate(_user);
+            if (result.IsValid)
+            {
+                await userManager.CreateAsync(_user, Password);
+                return _user;
+            }else
+            {
+                return null;
+            }
+             
             
         }
 

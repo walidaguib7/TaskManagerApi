@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FluentValidation;
+using Microsoft.EntityFrameworkCore;
 using TasksApi.Data;
 using TasksApi.Dtos.Category;
 using TasksApi.Models;
@@ -6,14 +7,24 @@ using TasksApi.Services;
 
 namespace TasksApi.Repositories
 {
-    public class CategoryRepo(ApplicationDBContext _context) : ICategory
+    public class CategoryRepo(
+        ApplicationDBContext _context , 
+        [FromKeyedServices("category")] IValidator<Category> _validator) : ICategory
     {
         private readonly ApplicationDBContext context = _context;
-        public async Task<Category> CreateCategory(Category category)
+        private readonly IValidator<Category> validator = _validator;
+        public async Task<Category?> CreateCategory(Category category)
         {
-            await context.categories.AddAsync(category);
-            await context.SaveChangesAsync();
-            return category;
+            var result = validator.Validate(category);
+            if (result.IsValid) {
+                await context.categories.AddAsync(category);
+                await context.SaveChangesAsync();
+                return category;
+            }else
+            {
+                return null;
+            }
+            
         }
 
         public async Task<Category?> DeleteCategory(int id)
@@ -41,11 +52,16 @@ namespace TasksApi.Repositories
         public async Task<Category?> UpdateCategory(int id, UpdateCategoryDto dto)
         {
             var category = await context.categories.FirstOrDefaultAsync(c => c.Id == id);
-            if (category == null) return null;
-
-            category.Name = dto.Name;
-            await context.SaveChangesAsync();
-            return category;
+            var result = validator.Validate(category);
+            if (result.IsValid)
+            {
+                category.Name = dto.Name;
+                await context.SaveChangesAsync();
+                return category;
+            }else
+            {
+                return null;
+            }
         }
     }
 }

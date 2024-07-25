@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "D:\\AW7\\TasksApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\repositories\\tasksrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:repositories\\tasksrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\services\\itasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:services\\itasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\notificationshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:notificationshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\extensions\\configservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:extensions\\configservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,75 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TaskController.cs",
-              "DocumentMoniker": "D:\\AW7\\TasksApi\\Controllers\\TaskController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TaskController.cs",
-              "ToolTip": "D:\\AW7\\TasksApi\\Controllers\\TaskController.cs",
-              "RelativeToolTip": "Controllers\\TaskController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T09:36:57.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ITasks.cs",
-              "DocumentMoniker": "D:\\AW7\\TasksApi\\Services\\ITasks.cs",
-              "RelativeDocumentMoniker": "Services\\ITasks.cs",
-              "ToolTip": "D:\\AW7\\TasksApi\\Services\\ITasks.cs",
-              "RelativeToolTip": "Services\\ITasks.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T09:35:53.092Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\AW7\\TasksApi\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "D:\\AW7\\TasksApi\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T03:40:32.957Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\AW7\\TasksApi\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\AW7\\TasksApi\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T03:36:34.493Z",
+              "WhenOpened": "2024-07-25T16:36:05.45Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TasksRepo.cs",
-              "DocumentMoniker": "D:\\AW7\\TasksApi\\Repositories\\TasksRepo.cs",
-              "RelativeDocumentMoniker": "Repositories\\TasksRepo.cs",
-              "ToolTip": "D:\\AW7\\TasksApi\\Repositories\\TasksRepo.cs",
-              "RelativeToolTip": "Repositories\\TasksRepo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAvAAAA",
+              "DocumentIndex": 2,
+              "Title": "ConfigServices.cs",
+              "DocumentMoniker": "D:\\AW7\\TasksApi\\Extensions\\ConfigServices.cs",
+              "RelativeDocumentMoniker": "Extensions\\ConfigServices.cs",
+              "ToolTip": "D:\\AW7\\TasksApi\\Extensions\\ConfigServices.cs",
+              "RelativeToolTip": "Extensions\\ConfigServices.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAowC4AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T23:13:44.72Z",
+              "WhenOpened": "2024-07-25T16:35:13.083Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NotificationsHub.cs",
+              "DocumentMoniker": "D:\\AW7\\TasksApi\\NotificationsHub.cs",
+              "RelativeDocumentMoniker": "NotificationsHub.cs",
+              "ToolTip": "D:\\AW7\\TasksApi\\NotificationsHub.cs",
+              "RelativeToolTip": "NotificationsHub.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T16:24:45.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             }
           ]
         }

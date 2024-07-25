@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using FluentValidation;
+using Microsoft.AspNetCore.Identity;
 using TasksApi.Data;
 using TasksApi.Models;
 using TasksApi.Repositories;
 using TasksApi.Services;
+using TasksApi.Validation;
 
 namespace TasksApi.Extensions
 {
@@ -15,6 +17,13 @@ namespace TasksApi.Extensions
             services.AddScoped<IUser, UserRepo>();
             services.AddTransient<ICategory, CategoryRepo>();
             services.AddTransient<ITasks, TasksRepo>();
+
+            services.AddKeyedScoped<IValidator<User>, UserValidator>("user");
+            services.AddKeyedScoped<IValidator<Category>,CategoryValidator>("category");
+            services.AddKeyedScoped<IValidator<Tasks>, TasksValidator>("tasks");
+
+            
+
         }
 
         public static void ConfigIdentity(this IServiceCollection services) 
@@ -31,10 +40,11 @@ namespace TasksApi.Extensions
 
                    }
                 ).AddEntityFrameworkStores<ApplicationDBContext>();
-        
-        
-        
-        
+        }
+
+        public static void AddSockets(this IServiceCollection services)
+        {
+            services.AddSignalR();
         }
     }
 }

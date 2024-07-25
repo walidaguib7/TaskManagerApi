@@ -1,21 +1,25 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using FluentValidation;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TasksApi.Dtos.User;
 using TasksApi.Mappers;
+using TasksApi.Models;
 using TasksApi.Services;
 
 namespace TasksApi.Controllers
 {
     [Route("api/Authentication")]
     [ApiController]
-    public class UserController(IUser _userService) : ControllerBase
+    public class UserController(IUser _userService  ) : ControllerBase
     {
         private readonly IUser userService = _userService;
+        
 
         [HttpPost("Register")]
         public async Task<IActionResult> CreateAccount([FromBody] RegisterDto dto)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
+            
             var user = dto.ToUser();
             var result = await userService.CreateAccount(user, dto.password);
             if (result == null) return BadRequest("User credentials are invalid!");
