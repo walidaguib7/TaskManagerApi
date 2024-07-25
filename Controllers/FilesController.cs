@@ -17,8 +17,8 @@ namespace TasksApi.Controllers
             if (!ModelState.IsValid) return BadRequest(ModelState);
             var Image = await _filesService.UploadImage(file);
             if (Image == null) return NotFound();
-            await _filesService.UploadFile(new Models.FilesModel { Path = Image });
-            return Created();
+            var fileModel = await _filesService.UploadFile(new Models.FilesModel { Path = Image });
+            return Ok(fileModel);
         }
     }
 }

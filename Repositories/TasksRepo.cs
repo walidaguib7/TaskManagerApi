@@ -26,11 +26,12 @@ namespace TasksApi.Repositories
             return task;
         }
 
-        public async Task<List<Tasks>> GetAllTasks(PostQuery query)
+        public async Task<List<Tasks>> GetAllTasks(PostQuery query , string userId)
         {
             var tasks = context.tasks
                 .Include(t => t.category)
                 .Include(t => t.user)
+                .Where(t => t.userId == userId)
                 .AsQueryable();
             if (!string.IsNullOrEmpty(query.Name))
             {

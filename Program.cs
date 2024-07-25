@@ -14,6 +14,18 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("MyAllowSpecificOrigins", builder =>
+    {
+        builder.WithOrigins("http://localhost:5173")
+               .AllowAnyHeader()
+               .AllowAnyOrigin()
+               .AllowAnyMethod();
+               
+    });
+});
+
 builder.Services.AddDbContext<ApplicationDBContext>( options => 
    options.UseSqlite("DataSource=api.db")
 );
@@ -52,6 +64,9 @@ builder.Services.AddDirectoryBrowser();
 
 var app = builder.Build();
 
+
+
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -61,6 +76,8 @@ if (app.Environment.IsDevelopment())
 
 var fileProvider = new PhysicalFileProvider(Path.Combine(builder.Environment.ContentRootPath, "Images"));
 var requestPath = "/MyImages";
+
+app.UseCors("MyAllowSpecificOrigins");
 
 // Enable displaying browser links.
 app.UseStaticFiles(new StaticFileOptions

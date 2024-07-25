@@ -16,9 +16,10 @@ namespace TasksApi.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> GetAllTasks([FromQuery] PostQuery query)
+        [Route("{userId}")]
+        public async Task<IActionResult> GetAllTasks([FromQuery] PostQuery query , [FromRoute] string userId)
         {
-            var tasks = await tasksService.GetAllTasks(query);
+            var tasks = await tasksService.GetAllTasks(query , userId);
             var task = tasks.Select(t => t.ToTaskDto());
             return Ok(task);
         }
