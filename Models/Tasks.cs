@@ -9,9 +9,10 @@ namespace TasksApi.Models
         public string Description { get; set; }
         public Status status { get; set; }
         public Priority priority { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
-        public DateTime? CompletedAt { get; set; }
+        public DateOnly CreatedAt { get; set; }
+        public DateOnly? UpdatedAt { get; set; }
+        public DateOnly? CompletedAt { get; set; }
+        public DateOnly Due_Date { get; set; }
         public int categoryId { get; set; }
         public Category category { get; set; }
         public string userId { get; set; }

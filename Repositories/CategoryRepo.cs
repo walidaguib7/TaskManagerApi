@@ -22,7 +22,7 @@ namespace TasksApi.Repositories
                 return category;
             }else
             {
-                return null;
+                throw new ValidationException(result.Errors);
             }
             
         }
@@ -60,7 +60,7 @@ namespace TasksApi.Repositories
                 return category;
             }else
             {
-                return null;
+                throw new ValidationException(result.Errors);
             }
         }
     }

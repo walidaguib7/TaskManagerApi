@@ -17,7 +17,8 @@ namespace TasksApi.Mappers
                 UpdatedAt = null ,
                 CompletedAt = null ,
                 categoryId = dto.categoryId,
-                userId = dto.userId 
+                userId = dto.userId ,
+                Due_Date = dto.Due_Date
             };
         }
 
@@ -33,6 +34,7 @@ namespace TasksApi.Mappers
                 CreatedAt = task.CreatedAt,
                 UpdatedAt = task.UpdatedAt,
                 CompletedAt = task.CompletedAt,
+                Due_Date = task.Due_Date,
                 username = task.user.UserName,
                 categoryName = task.category.Name
             };

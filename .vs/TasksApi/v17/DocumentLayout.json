@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\AW7\\TasksApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\notificationshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:notificationshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\repositories\\categoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:repositories\\categoryrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\extensions\\configservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:extensions\\configservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|d:\\aw7\\tasksapi\\validation\\categoryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84511E0A-8625-4AE3-AB5A-D39CF001CBFD}|TasksApi.csproj|solutionrelative:validation\\categoryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,50 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\AW7\\TasksApi\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\AW7\\TasksApi\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAWwEcAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T01:49:04.473Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\AW7\\TasksApi\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\AW7\\TasksApi\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAeAAAA",
+              "Title": "CategoryRepo.cs",
+              "DocumentMoniker": "D:\\AW7\\TasksApi\\Repositories\\CategoryRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\CategoryRepo.cs",
+              "ToolTip": "D:\\AW7\\TasksApi\\Repositories\\CategoryRepo.cs",
+              "RelativeToolTip": "Repositories\\CategoryRepo.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAUwDYAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T16:36:05.45Z",
+              "WhenOpened": "2024-07-26T01:45:28.502Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ConfigServices.cs",
-              "DocumentMoniker": "D:\\AW7\\TasksApi\\Extensions\\ConfigServices.cs",
-              "RelativeDocumentMoniker": "Extensions\\ConfigServices.cs",
-              "ToolTip": "D:\\AW7\\TasksApi\\Extensions\\ConfigServices.cs",
-              "RelativeToolTip": "Extensions\\ConfigServices.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAowC4AAAAiAAAA",
+              "Title": "CategoryValidator.cs",
+              "DocumentMoniker": "D:\\AW7\\TasksApi\\Validation\\CategoryValidator.cs",
+              "RelativeDocumentMoniker": "Validation\\CategoryValidator.cs",
+              "ToolTip": "D:\\AW7\\TasksApi\\Validation\\CategoryValidator.cs",
+              "RelativeToolTip": "Validation\\CategoryValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T16:35:13.083Z",
+              "WhenOpened": "2024-07-26T01:44:53.372Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NotificationsHub.cs",
-              "DocumentMoniker": "D:\\AW7\\TasksApi\\NotificationsHub.cs",
-              "RelativeDocumentMoniker": "NotificationsHub.cs",
-              "ToolTip": "D:\\AW7\\TasksApi\\NotificationsHub.cs",
-              "RelativeToolTip": "NotificationsHub.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T16:24:45.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             }
           ]
         }

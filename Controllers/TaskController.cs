@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using FluentValidation;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+
 using TasksApi.Dtos.Tasks;
 using TasksApi.Helpers;
 using TasksApi.Mappers;
@@ -37,10 +39,22 @@ namespace TasksApi.Controllers
         public async Task<IActionResult> CreateTask([FromBody] CreateTaskDto dto)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
+
             var taskModel = dto.ToTask();
-            var task = await tasksService.CreateTask(taskModel);
-            if (task == null) return StatusCode(400);
-            return Created();
+            try
+            {
+                var task = await tasksService.CreateTask(taskModel);
+                return Created();
+            }
+            catch (ValidationException e)
+            {
+                return BadRequest(new ValidationErrorResponse { Errors = e.Errors.Select(e => e.ErrorMessage) });
+            }
+            catch (Exception e)
+            {
+                // Handle other exceptions (e.g., database errors)
+                return StatusCode(500, "An error occurred");
+            }
         }
 
         [HttpPut]

@@ -4,6 +4,8 @@ using TasksApi.Dtos.Category;
 using TasksApi.Mappers;
 using TasksApi.Services;
 using TasksApi.Filters;
+using FluentValidation;
+using TasksApi.Helpers;
 
 namespace TasksApi.Controllers
 {
@@ -36,6 +38,17 @@ namespace TasksApi.Controllers
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
             var category = dto.ToCategory();
+            try
+            {
+
+            }
+            catch (ValidationException e)
+            {
+                return BadRequest(new ValidationErrorResponse { Errors = e.Errors.Select(e => e.ErrorMessage) });
+            }
+            catch (Exception e) {
+                return StatusCode(500, "An error occurred");
+            }
             var categoryModel = await categoryService.CreateCategory(category);
             return Ok(categoryModel);
         }
@@ -46,8 +59,19 @@ namespace TasksApi.Controllers
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
             var category = await categoryService.UpdateCategory(categoryId, dto);
-            if (category == null) return NotFound();
-            return StatusCode(201 , "Updated Successfully");
+            try
+            {
+                if (category == null) return NotFound();
+                return StatusCode(201, "Updated Successfully");
+            }
+            catch(ValidationException e)
+            {
+                return BadRequest(new ValidationErrorResponse { Errors = e.Errors.Select(e => e.ErrorMessage) });
+            }catch(Exception e)
+            {
+                return StatusCode(500, "An error occurred");
+            }
+
         }
 
         [HttpDelete]

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using TasksApi.Dtos.User;
+using TasksApi.Helpers;
 using TasksApi.Models;
 using TasksApi.Services;
 
@@ -37,7 +38,7 @@ namespace TasksApi.Repositories
                 return _user;
             }else
             {
-                return null;
+                throw new ValidationException(result.Errors);
             }
              
             
@@ -48,7 +49,11 @@ namespace TasksApi.Repositories
             var user = await userManager.Users
                 .Include(u => u.file)
                 .FirstOrDefaultAsync(u => u.Email == dto.Email);
-            if (user == null) return null;
+            var ValidationResult = validator.Validate(user);
+            if (!ValidationResult.IsValid)
+            {
+                throw new ValidationException(ValidationResult.Errors);
+            }
             var result = await manager.CheckPasswordSignInAsync(user, dto.Password, false);
 
             return new NewUser

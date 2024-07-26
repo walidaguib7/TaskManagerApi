@@ -23,7 +23,7 @@ namespace TasksApi.Repositories
                 return task;
             }else
             {
-                return null;
+                throw new ValidationException(result.Errors);
             }
             
         }
@@ -76,9 +76,10 @@ namespace TasksApi.Repositories
                 task.Description = dto.Description;
                 task.status = dto.status;
                 task.priority = dto.priority;
-                task.UpdatedAt = DateTime.Today;
+                task.UpdatedAt = DateOnly.FromDateTime(DateTime.Today);
                 task.CompletedAt = dto.CompletedAt;
                 task.categoryId = dto.categoryId;
+                task.Due_Date = dto.Due_Date;
                 await context.SaveChangesAsync();
                 return task;
             }else

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TasksApi.Dtos.User;
+using TasksApi.Helpers;
 using TasksApi.Mappers;
 using TasksApi.Models;
 using TasksApi.Services;
@@ -21,9 +22,20 @@ namespace TasksApi.Controllers
             if (!ModelState.IsValid) return BadRequest(ModelState);
             
             var user = dto.ToUser();
-            var result = await userService.CreateAccount(user, dto.password);
-            if (result == null) return BadRequest("User credentials are invalid!");
-            return Created();
+            try
+            {
+                var result = await userService.CreateAccount(user, dto.password);
+                if (result == null) return BadRequest("User credentials are invalid!");
+                return Created();
+            }
+            catch(ValidationException e)
+            {
+                return BadRequest(new ValidationErrorResponse { Errors = e.Errors.Select(e => e.ErrorMessage) });
+            }catch(Exception e)
+            {
+                return StatusCode(500, "An error occurred");
+            }
+
         }
 
         [HttpPost("Login")]

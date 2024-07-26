@@ -8,7 +8,7 @@ namespace TasksApi.Validation
         public CategoryValidator() {
 
             RuleFor(c => c.Name)
-                .NotEmpty().NotNull();
+                .NotEmpty().NotNull().WithName("category name shoudnit be null or empty");
         }
     }
 }
